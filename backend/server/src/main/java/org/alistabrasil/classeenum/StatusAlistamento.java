@@ -1,4 +1,4 @@
-package org.alistabrasil.Enum;
+package org.alistabrasil.classeenum;
 
 public enum StatusAlistamento {
 

@@ -1,5 +1,5 @@
 package org.alistabrasil.models;
-import org.alistabrasil.Enum.StatusAlistamento;
+import org.alistabrasil.classeenum.StatusAlistamento;
 
 public class Alistamento {
 
