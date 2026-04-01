@@ -1,0 +1,11 @@
+POST http://localhost:8080/usuarios/cadastro
+Content-Type: application/json
+
+{
+  "cpf": "13413155515",
+  "nome": "Golias Silva",
+  "email": "golisa@gmail.com",
+  "senha": "789919",
+  "telefone": "(61) 99339090",
+  "endereco": "Codó - Maranhão"
+}

@@ -1,7 +1,9 @@
 package org.alistabrasil.models;
 
+
 public class Usuario {
 
+    
     private String cpf;
     private String nome;
     private String dataDeNascimento;
@@ -10,12 +12,19 @@ public class Usuario {
     private String telefone;
     private String endereco;
 
-    public Usuario(String cpf, String nome, String dataDeNascimento, String email, String senha) {
+
+    public Usuario() {
+
+    }
+
+    public Usuario(String cpf, String nome, String dataDeNascimento, String email, String senha, String telefone, String endereco) {
         this.cpf = cpf;
-        this.nome = nome;
+        this.nome = nome; 
         this.dataDeNascimento = dataDeNascimento;
         this.email = email;
         this.senha = senha;
+        this.telefone = telefone;
+        this.endereco = endereco;
     }
 
     public Usuario(String cpf, String senha){
@@ -78,11 +87,4 @@ public class Usuario {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     } 
-
-     public String toString(){
-        return "Nome: " + 
-             nome + 
-             "\nE-mail: " + email +
-             "\nCPF: " + cpf;   
-    }
 }

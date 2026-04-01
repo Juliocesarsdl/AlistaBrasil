@@ -1,4 +1,7 @@
+org\alistabrasil\controller\TesteController.class
+org\alistabrasil\controller\UsuarioController.class
 org\alistabrasil\models\Alistamento.class
+org\alistabrasil\AlistaBrasilSistema.class
 org\alistabrasil\classeenum\StatusAlistamento.class
 org\alistabrasil\models\Certificado.class
 org\alistabrasil\services\UsuarioService.class

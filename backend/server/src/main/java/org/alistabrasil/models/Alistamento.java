@@ -1,16 +1,23 @@
 package org.alistabrasil.models;
+
+
+import java.time.LocalDate;
+
 import org.alistabrasil.classeenum.StatusAlistamento;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Alistamento {
 
     private String idAlistamento;
-    private String dataAlistamento;
+    private LocalDate dataAlistamento;
     private StatusAlistamento status;
     private String observacoes;
+    
+    @Autowired
     private Usuario usuario;
     
     
-    public Alistamento(String idAlistamento, String dataAlistamento, Usuario usuario) {
+    public Alistamento(String idAlistamento, LocalDate dataAlistamento, Usuario usuario) {
         this.idAlistamento = idAlistamento;
         this.dataAlistamento = dataAlistamento;
         this.usuario = usuario;
@@ -32,25 +39,25 @@ public class Alistamento {
         this.usuario = usuario;
     }
 
-    public String getDataAlistamento() {
+    public LocalDate getDataAlistamento() {
         return dataAlistamento;
     }
-    public void setDataAlistamento(String dataAlistamento) {
-        this.dataAlistamento = dataAlistamento;
-    }
+
     public StatusAlistamento getStatus() {
         return status;
     }
+
     public void setStatus(StatusAlistamento status) {
         this.status = status;
     }
+
     public String getObservacoes() {
         return observacoes;
     }
+
     public void setObservacoes(String observacoes) {
         this.observacoes = observacoes;
     } 
-
 
     public String toString(Usuario user){
         
@@ -59,7 +66,6 @@ public class Alistamento {
                 "\nE-mail: " + user.getEmail() + 
                 "\nID: " + idAlistamento + 
                 "\nData de alistamento: " + dataAlistamento + 
-                "\nStatus: " + status;
-                
+                "\nStatus: " + status;       
     }
 }

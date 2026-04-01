@@ -1,13 +1,15 @@
 package org.alistabrasil.models;
 
+import java.util.Date;
+
 public class Certificado {
 
     private String idCertificado;
     private String tipoCertificado;
-    private String dataEmissao;
+    private Date dataEmissao;
     private String codigoAutenticado;
 
-    public Certificado(String idCertificado, String tipoCertificado, String dataEmissao) {
+    public Certificado(String idCertificado, String tipoCertificado, Date dataEmissao) {
         this.idCertificado = idCertificado;
         this.tipoCertificado = tipoCertificado;
         this.dataEmissao = dataEmissao;
@@ -21,7 +23,7 @@ public class Certificado {
         return tipoCertificado;
     }
 
-    public String getDataEmissao() {
+    public Date getDataEmissao() {
         return dataEmissao;
     }
 
