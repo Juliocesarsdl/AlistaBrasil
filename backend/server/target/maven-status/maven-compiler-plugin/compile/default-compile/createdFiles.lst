@@ -6,5 +6,5 @@ org\alistabrasil\classeenum\StatusAlistamento.class
 org\alistabrasil\models\Certificado.class
 org\alistabrasil\services\UsuarioService.class
 org\alistabrasil\services\AListamentoService.class
-org\alistabrasil\models\InformacaoLegal.class
 org\alistabrasil\models\Usuario.class
+org\alistabrasil\controller\AlistamentoController.class

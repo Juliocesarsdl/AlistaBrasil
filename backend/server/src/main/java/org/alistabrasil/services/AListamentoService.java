@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.alistabrasil.classeenum.StatusAlistamento;
 import org.alistabrasil.models.Alistamento;
 import org.alistabrasil.models.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ public class AListamentoService {
 
           if (servico.buscaPorCpf(usuario.getCpf()) != null) {
 
-               Alistamento alistado = new Alistamento(usuario.getCpf(), LocalDate.now(), usuario);
+               Alistamento alistado = new Alistamento("1", LocalDate.now(), StatusAlistamento.EM_ANDAMENTO , usuario);
 
                alistamentos.add(alistado);
 
@@ -43,5 +44,3 @@ public class AListamentoService {
 
      
 }
-
-

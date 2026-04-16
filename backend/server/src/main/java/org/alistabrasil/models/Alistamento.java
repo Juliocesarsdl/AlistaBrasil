@@ -16,10 +16,10 @@ public class Alistamento {
     @Autowired
     private Usuario usuario;
     
-    
-    public Alistamento(String idAlistamento, LocalDate dataAlistamento, Usuario usuario) {
+    public Alistamento(String idAlistamento, LocalDate dataAlistamento, StatusAlistamento status, Usuario usuario) {
         this.idAlistamento = idAlistamento;
         this.dataAlistamento = dataAlistamento;
+        this.status = status;
         this.usuario = usuario;
     }
 
@@ -58,14 +58,4 @@ public class Alistamento {
     public void setObservacoes(String observacoes) {
         this.observacoes = observacoes;
     } 
-
-    public String toString(Usuario user){
-        
-        return "Nome: " + user.getNome() +
-                "\nCPF: " + user.getCpf() + 
-                "\nE-mail: " + user.getEmail() + 
-                "\nID: " + idAlistamento + 
-                "\nData de alistamento: " + dataAlistamento + 
-                "\nStatus: " + status;       
-    }
 }

@@ -12,7 +12,6 @@ public class Usuario {
     private String telefone;
     private String endereco;
 
-
     public Usuario() {
 
     }
